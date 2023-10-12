@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+
+<script>
+
+//this will generate a tree with dynamic size
+function makeTree(size){
+
+let tree = ""
+
+for(let i=size ; i>=1;i-=2){
+
+
+for(let k=0;k<i;k++){
+	tree+="*";
+}
+
+tree+="<br/>";
+
+}
+
+
+
+document.writeln("<div style='text-align: center' >"+tree+"</div>")
+
+}
+
+
+
+
+
+function test(){
+
+let x = 2;
+
+let result = (x>1)?"Xxxxx":"yyyy";
+
+
+
+alert(result);
+
+}
+
+
+test()
+
+
+
+//makeTree(20);
+</script>
+<body>
+
+
+
+<div>
+
+ 
+ <div id="result" style="text-align: center;" ></div>
+
+</div>
+</body>
+
+</html>
+
